@@ -1,0 +1,18 @@
+/**index.wxss**/
+
+.head {
+  margin: 2rpx;
+}
+
+.item {
+  margin: 2rpx;
+  width: 750rpx;
+  height: 200rpx;
+  background: #c8e0ad;
+}
+
+.tapbox{
+  width: 100%;
+  height: 200rpx;
+  background: #dddddd;
+}

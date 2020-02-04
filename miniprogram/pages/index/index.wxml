@@ -1,0 +1,28 @@
+<!--index.wxml-->
+
+<view class="head">
+  <image mode="widthFix" src="../../images/jiuyou_top.png"></image>
+</view>
+
+<view class="item" hover-class="tapbox">
+  观察植物1
+</view>
+<view class="item" hover-class="tapbox">
+  体育课2
+</view>
+<view class="item" hover-class="tapbox">
+  手工课3
+</view>
+<view class="item" hover-class="tapbox">
+  手工课4
+</view>
+<view class="item" hover-class="tapbox">
+  手工课5
+</view>
+<view class="item" hover-class="tapbox">
+  手工课6
+</view>
+<view class="item" hover-class="tapbox">
+  手工课7
+</view>
+
