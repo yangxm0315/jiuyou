@@ -1,18 +1,30 @@
 /**index.wxss**/
-
 .head {
-  margin: 2rpx;
-}
-
-.item {
-  margin: 2rpx;
   width: 750rpx;
+  height: 5rpx;
+  background:orange;
+}
+.body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 100%;
+  height: 100%;
+}
+.imgfrm{
+  height: 250rpx;
+  width: 372rpx;
+  justify-content:center;  
+  align-items: center;
+  border: 2rpx solid gainsboro;
+}
+.img{
   height: 200rpx;
-  background: #c8e0ad;
 }
 
-.tapbox{
-  width: 100%;
-  height: 200rpx;
-  background: #dddddd;
+.textview {
+  display: flex;
+  height: 50rpx;
+  justify-content:center;  
+  text-align: center;
 }

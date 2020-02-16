@@ -1,0 +1,27 @@
+.title{
+  display: flex;
+  justify-content: center;
+  font-size: 40rpx;
+}
+.user {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20rpx;
+}
+.cdate {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20rpx;
+}
+.textview{
+  display: flex;
+  justify-content: center;
+  text-align: center;  
+}
+.pagefoot {
+  height: 50rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end; 
+  font-size: 20rpx;
+}

@@ -1,28 +1,23 @@
 <!--index.wxml-->
+ <swiper 
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}"
+    >
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <image src='{{baseUrl+item}}' style='width:100%;height:250px;' />
+        </swiper-item>
+      </block>
+  </swiper>
+<view class='head'></view>  
 
-<view class="head">
-  <image mode="widthFix" src="../../images/jiuyou_top.png"></image>
+<view class='body'>
+  <view class='imgfrm' wx:for="{{caselist}}">
+    <navigator hover-class="none" url="/pages/details/index?id={{item._id}}">
+      <image class='img' mode="aspectFit" src="https://wx.etgps.cn/{{caselist[index].images[0]}}"></image>
+      <text class='textview'>{{caselist[index].title}}</text>
+    </navigator>
+  </view>
 </view>
-
-<view class="item" hover-class="tapbox">
-  观察植物1
-</view>
-<view class="item" hover-class="tapbox">
-  体育课2
-</view>
-<view class="item" hover-class="tapbox">
-  手工课3
-</view>
-<view class="item" hover-class="tapbox">
-  手工课4
-</view>
-<view class="item" hover-class="tapbox">
-  手工课5
-</view>
-<view class="item" hover-class="tapbox">
-  手工课6
-</view>
-<view class="item" hover-class="tapbox">
-  手工课7
-</view>
-

@@ -1,0 +1,14 @@
+<view class='head'>
+  <text class='title'>{{title}}</text>
+  <text class='user'>{{user}}</text>
+  <text class='cdate'>{{cdate}}</text>
+</view>
+<view class='body'>
+<scroll-view scroll-y class='bodylist'>
+  <view class='imgfrm' wx:for="{{imgurl}}">
+      <image class='img' mode="widthFix" src="https://wx.etgps.cn/{{imgurl[index]}}"></image>
+      <text class='textview'>{{imgtext[index]}}</text>
+  </view>
+</scroll-view>
+</view>
+<view class='pagefoot'><text>深圳市第九幼儿园</text></view>

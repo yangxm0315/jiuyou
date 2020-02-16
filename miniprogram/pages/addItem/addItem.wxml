@@ -1,0 +1,21 @@
+<view class='tool'>
+  <text class='btntool' bindtap="addImg">添加图片</text>
+  <text class='btntool' bindtap="saveItem">保存</text>
+</view>
+
+<view class='body' style="position:top:0;width:750rpx;">
+<scroll-view scroll-y class='bodylist'>
+  <textarea class='input_view' maxlength='-1' auto-height='true' bindinput='inputCon'  
+    value='{{firstCon}}' placeholder='请输入标题内容...' bindblur="outBlur" id='0'/>
+  <view class='imgfrm' wx:for="{{imglist}}">
+    <image class='img' mode="widthFix" src="{{item}}"></image>
+    <view>
+      <icon type='cancel' bindtap='deletedImg' data-index='{{index}}' size='30' color='#ffffff' 
+        style='width:25px;height:25px;margin-left:-35px;margin-top:10px;'>
+      </icon>
+    </view>
+    <textarea class='input_view' maxlength='-1' auto-height='true' bindinput='inputCon' 
+      value='{{textlist[index]}}' placeholder='请输入图片内容...' bindblur="outBlur" id='{{index+1}}'/>
+  </view>
+</scroll-view>  
+</view>

@@ -1,0 +1,115 @@
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+
+  height: 350rpx;
+  border-bottom: 5rpx solid #dedede;
+  background: #fff;
+}
+.toprow1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 750rpx;
+  height: 150rpx;
+}
+
+.img{
+  display: flex;
+  justify-content: center;
+  border-radius: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.toprow2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 750rpx;
+  height: 20rpx;
+}
+
+.toprow3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+  height: 120rpx;
+}
+
+.usertext{
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+}
+
+.tab{
+  height: 7vh;
+  display: flex;
+  line-height: 7vh;
+}
+
+.tab view{
+  flex: 1 0 auto;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+}
+.tab .active{
+  color: #ff5f19;
+  border-bottom: 1px solid #ff5f19;
+  padding-bottom:1.8vh;
+}
+
+.list{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.additem{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  justify-content: center;
+  align-items: center;
+  border: 3rpx solid #dedede;
+}
+.addimg{
+  display: flex;
+  height: 60rpx;
+  width: 150rpx;
+  align-items: center;
+}
+.item{
+  display: flex;
+  width: 100%;
+  height: 200rpx;
+  border-bottom: 3rpx solid #dedede;
+}
+.content{
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+  height: 200rpx;
+}
+.itemimg{
+  display: flex;
+  width: 100%;
+  height: 160rpx;
+}
+.itemtext{
+  display: flex;
+  width: 100%;
+  height: 40rpx;
+  flex-wrap: nowrap;
+}
+
+
