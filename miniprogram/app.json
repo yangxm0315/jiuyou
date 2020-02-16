@@ -17,10 +17,14 @@
     "list": [
       {
         "text": "首页",
+        "selectedIconPath": "images/home_page_n.png",
+        "iconPath": "images/home_page_y.png",
         "pagePath": "pages/index/index"
       },
       {
         "text": "我",
+        "selectedIconPath": "images/my_y.png",
+        "iconPath": "images/my_n.png",
         "pagePath": "pages/AboutMe/AboutMe"
       }
     ]
