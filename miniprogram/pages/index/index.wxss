@@ -23,8 +23,11 @@
 }
 
 .textview {
-  display: flex;
-  height: 50rpx;
-  justify-content:center;  
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
   text-align: center;
 }

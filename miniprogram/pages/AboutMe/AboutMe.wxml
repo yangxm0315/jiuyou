@@ -25,15 +25,18 @@
     <text class='addimg' bindtap="addItem">新增教案</text>
     <image class='addimg' mode="aspectFit" src="../../images/add.png" bindtap="addItem"></image>
   </view>
-  <view class='item' wx:if="{{!isEdit}}" wx:for="{{list}}">
-    <navigator class='content' hover-class="none" url="/pages/orderDetails/index?id={{item._id}}">
-      <image class='itemimg' mode="aspectFit" src='{{item.goods[0].img}}'></image>
-      <view class='itemtext'>
-        <view class='itemtitle'>共{{item.goods.length}}件商品</view>
-        <view class='itemspec'>{{item.creat_date}}</view>
-        <view class='itemprice'>{{item.totalPrice}}</view>
-      </view>
-    </navigator>
+  <view class='itemaa' wx:for="{{list}}" wx:key="{{id}}">
+    <movable-area class='movearea'>
+      <movable-view class='moveview' direction="horizontal">
+          <!--navigator class='content' hover-class="none" url="/pages/details/index?id={{item._id}}">
+          <text class='itemtitle'>{{item.title}}</text-->
+          <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}"            bindtouchstart="touchstart" bindtouchmove="touchmove">        
+            <view class="itemtitle" bindtap='goDetail' data-index="{{index}}">{{item.title}}</view>
+            <view class="btndel" catchtap="delItem" data-index="{{index}}">删除</view>
+          </view>
+          <!--/navigator-->
+      </movable-view>
+    </movable-area>
   </view>
 </scroll-view>
 

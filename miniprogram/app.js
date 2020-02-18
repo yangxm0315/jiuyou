@@ -66,8 +66,8 @@ App({
         data: Object.assign(currency, data),
         method: method,
         success: function (res) {
-          //          console.log(url)
-          //          console.log(res)
+                    console.log(url)
+                    console.log(res)
 
           if (res.data.code != 200) {
             wx.showModal({
